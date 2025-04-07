@@ -6,7 +6,7 @@ const AverageComponent = () => {
 
   const fetchAverage = () => {
     axios
-      .get(`http://localhost:3001/api/average`)
+      .get(`https://plggy-fx.onrender.com/api/average`)
       .then((res) => setAverage(res.data))
       .catch((err) => console.error('Error fetching average:', err));
   };

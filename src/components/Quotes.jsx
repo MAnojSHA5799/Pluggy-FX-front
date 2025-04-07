@@ -6,7 +6,7 @@ const QuotesComponent = () => {
 
   const fetchQuotes = () => {
     axios
-      .get(`http://localhost:3001/api/quotes`)
+      .get(`https://plggy-fx.onrender.com/api/quotes`)
       .then((res) => setQuotes(res.data))
       .catch((err) => console.error('Error fetching quotes:', err));
   };

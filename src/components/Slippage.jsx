@@ -6,7 +6,7 @@ const SlippageComponent = () => {
 
   const fetchSlippage = () => {
     axios
-      .get(`http://localhost:3001/api/slippage`)
+      .get(`https://plggy-fx.onrender.com/api/slippage`)
       .then((res) => setData(res.data))
       .catch((err) => console.error('Error fetching slippage:', err));
   };
